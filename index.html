@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="send.html">
+
+
+  <title>Review Rating</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<style>
+  .result {
+    display: none;
+  }
+
+  .all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    height: 50vh;
+    width: 24%;
+    border-radius: 7px;
+    background-color: hsl(213, 19%, 18%);
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(240, 1%, 13%);
+  }
+
+  .how {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .btn {
+    background-color: hsl(240, 1%, 13%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    height: 4vh;
+    width: 20%;
+  }
+
+  .btn:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .btn:focus {
+    background-color: red;
+  }
+
+  .display {
+    display: flex;
+    gap: 10px;
+    width: 80%;
+  }
+
+  .send {
+    background-color: orange;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 80%;
+    height: 8vh;
+  }
+
+  .send a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .send:hover {
+    background-color: white;
+    color: black;
+  }
+
+  a:hover {
+    color: black;
+  }
+
+  .review-next {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(213, 19%, 18%);
+    height: 55vh;
+    width: 25%;
+    border-radius: 14px;
+    color: white;
+  }
+
+  .review-next h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: orange;
+    background-color: hsl(0, 2%, 48%);
+    width: 17vw;
+    height: 3vh;
+    border-radius: 4px;
+    padding: 10px;
+
+  }
+
+  .review-next p {
+    text-align: center;
+  }
+  @media screen and (max-width:950px){
+    .all,.review-next{
+      width: 80vw;
+    }
+  }
+</style>
+
+<body class="top">
+  <div class="all">
+
+    <div>
+      <p
+        style="color: orange; background-color: hsl(240, 1%, 13%); width: 2vw; display: flex; align-items: center; justify-content: center;border-radius: 6px;">
+        &#9830;</p>
+      <h1 class="how"> How did we do?</h1>
+      <p class="result"></p>
+      <p style="color: white;">Please let us know how we did with your <br> support request. All feedback is appreciated
+        <br>
+        to help us improve our offering!</p>
+    </div>
+    <div class="display">
+
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>
+      <button class="btn">4</button>
+      <button class="btn">5</button>
+
+    </div>
+
+    <button class="send" type="submit">SuBmit</button>
+    <br>
+    <br>
+
+  </div>
+
+  <div class="review-next">
+
+    <p class="rst"></p>
+    <h1>Thank you!</h1>
+    <p> We appreciate you taking the time to give a <br>rating. If you ever need more support,
+      don't <br> hesitate to get in touch!
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
